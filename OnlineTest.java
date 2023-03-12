@@ -1,4 +1,3 @@
-
 import java.awt.event.ActionEvent;  
 
 import java.awt.event.ActionListener;  
@@ -7,13 +6,15 @@ import javax.swing.ButtonGroup;
 
  import javax.swing.JButton;  
 
- import javax.swing.JFrame;  
+ import javax.swing.JFrame;
 
  import javax.swing.JLabel;  
 
  import javax.swing.JOptionPane;  
 
- import javax.swing.JRadioButton;  
+ import javax.swing.JRadioButton; 
+  
+ 
 
  class OnlineTest extends JFrame implements ActionListener {  
 
@@ -25,7 +26,9 @@ import javax.swing.ButtonGroup;
 
  JButton btnNext, btnBookmark,btnPrevious;  
 
- ButtonGroup bg;  
+ ButtonGroup bg;
+ 
+ 
 
  int count = 0, current = 0, x = 1, y = 1, now = 0,wrong;  
 
@@ -40,7 +43,6 @@ import javax.swing.ButtonGroup;
  label = new JLabel();  
 
  add(label);  
-
  bg = new ButtonGroup();  
 
  for (int i = 0; i < 5; i++) {  
@@ -69,7 +71,8 @@ btnPrevious.addActionListener(this);
 
  add(btnBookmark);  
 
-add(btnPrevious);  
+add(btnPrevious);
+
 
  set();  
 
@@ -89,7 +92,7 @@ label.setBounds(30, 40, 450, 20);
 
  btnBookmark.setBounds(370, 240, 100, 30);  
 
-btnPrevious.setBounds(30,240,100,30);  
+btnPrevious.setBounds(30 ,240,100,30);  
 
  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
 
@@ -99,7 +102,7 @@ btnPrevious.setBounds(30,240,100,30);
 
  setVisible(true);  
 
- setSize(600, 350);  
+ setSize(600, 450);  
 
  }  
 
@@ -404,7 +407,8 @@ if (current == 6)
 
  return (radioButton[0].isSelected());  
 
- return false;
+ return
+		 false;
 
  }  
 
@@ -418,4 +422,6 @@ public static void main(String s[]) {
 
  }  
 
-}
+}    
+
+ 
